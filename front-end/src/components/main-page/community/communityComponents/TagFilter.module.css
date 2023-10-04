@@ -1,0 +1,417 @@
+.tagFilter {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tagLeftSidebar {
+  position: fixed;
+  left: -15%;
+  top: 0;
+  width: 13%;
+  height: 100%;
+  background-color: #f0f0f0;
+  transition: left 0.3s ease;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 3%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.2em solid #004aad;
+}
+
+.tagLeftSidebar.visible {
+  left: 0;
+}
+
+
+.leftSidebarToggle {
+  position: fixed;
+  left: 1vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 3vw;
+  height: 3vw;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 10vw;
+  cursor: pointer;
+  transition: left 0.3s ease;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2em solid #004aad;
+  border-radius: 50%;
+  color: #004aad;
+}
+
+
+.leftSidebarToggle.visible{
+  left:11%;
+  
+  
+}
+
+.leftSidebarToggleIcon {
+  font-size: 100%;
+}
+
+
+.middleText {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 120%;
+  align-items: center;
+}
+
+
+.tagTop{
+  width: 100%;
+  height:15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 80%;
+}
+
+.tagButtons {
+  margin: auto;
+  display: flex;
+  width: 60%;
+  font-size: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.tagButtons button {
+  padding: 10% 15%;
+  border-radius: 15%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: auto;
+}
+
+.tagList {
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll;
+  max-height:85vh;
+}
+
+.tagListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  transition: transform 0.3s ease;
+  padding-left: 10%;
+  border-radius: 5%;
+  width: 80%;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  font-size: 100%;
+}
+
+.tagListItem:hover{
+  border: 0.2em solid #004aad;
+}
+
+.tagListItemSelected {
+  transform: translateX(8%);
+  font-weight: bold;
+  border: 0.2em solid #004aad;
+}
+
+.tagListIcon {
+  margin-right: 5%;
+  font-size: 80%;
+  color: #004aad;
+}
+
+.tagList input[type="checkbox"] {
+  display: none;
+}
+
+.tagList input[type="checkbox"] + .tagListIcon {
+  color: #004aad;
+}
+
+.tagList input[type="checkbox"]:checked + .tagListIcon {
+  color: black;
+}
+
+.tagRightSidebar {
+  height: auto;
+  position: absolute;
+  right: -15%;
+  top: 40%;
+  width: 13%;
+  background-color: #f0f0f0;
+  transition: right 0.3s ease, height 0.3s ease;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 3%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.2em solid #004aad;
+  z-index: 3;
+  min-height: 10%;
+}
+
+.tagRightSidebar.visible {
+  right: 0;
+}
+
+.rightSidebarToggle {
+  position: fixed;
+  right: 1vw;
+  top: 50vh;
+  transform: translateY(-50%);
+  width: 3vw;
+  height: 3vw;
+  background-color: #f0f0f0;
+  text-align: center;
+  line-height: 10vw;
+  cursor: pointer;
+  transition: right 0.3s ease;
+  z-index: 3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.2em solid #004aad;
+  color: #004aad;
+}
+
+.rightSidebarToggle.visible {
+  right: 12%;
+  border: 0.2em solid #004aad;
+}
+
+.rightSidebarToggleIcon {
+  font-size: 150%;
+}
+
+.placeOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  font-size: 90%;
+}
+
+
+.threeWaySlider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10%; 
+  border-radius: 5%;  
+  background: white;
+  outline: none;
+  transition: opacity .2s;
+}
+
+.threeWaySlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5em; 
+  height: 1.5em; 
+  border-radius: 50%; 
+  background: #004aad;
+  cursor: pointer;
+}
+
+.placeShown{
+  padding-bottom: 5%;
+}
+
+.genreFilter select,
+.areaFilter select,
+.placeFilter select {
+  width: 80%;
+  border-radius: 10%;
+  appearance: none;
+  padding: 2% 5%;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-size: 80%;
+  margin: 2%;
+  border: 3px solid black;
+}
+
+.genreFilter select::after,
+.areaFilter select::after,
+.placeFilter select::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 8%;
+  height: 8%;
+  border-left: 0.2em solid #333;
+  border-bottom: 0.2em solid #333;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.genreFilter select:hover::after,
+.areaFilter select:hover::after,
+.placeFilter select:hover::after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.genreFilter select:focus,
+.areaFilter select:focus,
+.placeFilter select:focus {
+  background-color: #e0e0e0;
+}
+
+.genreFilter select option,
+.areaFilter select option,
+.placeFilter select option {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+@media screen and (max-width: 768px) {
+  .tagLeftSidebar {
+    position: fixed;
+    left: -37%;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: left 0.3s ease;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.2em solid #004aad;
+  }
+
+  .leftSidebarToggle {
+    position: fixed;
+    left: 1vw;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 3vw;
+    height: 3vw;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 10vw;
+    cursor: pointer;
+    transition: left 0.3s ease;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2em solid #004aad;
+  border-radius: 50%;
+  color: #004aad;
+  }
+
+  .leftSidebarToggle.visible{
+    left:32%;
+    
+    
+  }
+
+  .tagListItem {
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    transition: transform 0.3s ease;
+    padding-left: 10%;
+    border-radius: 5%;
+    width: 70%;
+    align-items: center;
+    overflow-x: scroll;
+    white-space: nowrap;
+    font-size: 80%;
+  }
+  
+  
+  .tagListItemSelected {
+    transform: translateX(15%);
+    font-weight: bold;
+    border: 0.2em solid black;
+  }
+
+  .tagRightSidebar {
+  
+    position: fixed;
+    right: -35%;
+    top: 40%;
+    width: 30%;
+    height: auto;
+    background-color: #f0f0f0;
+    transition: right 0.3s ease, height 0.3s ease;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 5%;
+    border: 0.2em solid #004aad;
+    color: #004aad;
+    min-height: 5%;
+  }
+
+  .rightSidebarToggle.visible {
+    right: 28%;
+  }
+
+  .rightSidebarToggle {
+    position: fixed;
+    right: 1vw;
+    top: 50vh;
+    transform: translateY(-50%);
+    width: 3vw;
+    height: 3vw;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 10vw;
+    cursor: pointer;
+    transition: right 0.3s ease;
+    z-index: 3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.2em solid #004aad;
+  }
+
+  .threeWaySlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em; 
+    height: 1em; 
+    border-radius: 50%; 
+    background: #004aad;
+    cursor: pointer;
+  }
+}

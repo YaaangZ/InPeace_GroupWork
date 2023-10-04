@@ -1,0 +1,243 @@
+.signupcontainer {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.blur{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)),
+      url("/public/images/NYh11.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position:absolute;
+  z-index: -1;
+  
+}
+
+.backIcon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: black;
+  font-size: 60px;
+  z-index: 1;
+}
+
+.backIcon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+
+}
+
+.midbox{
+  height:70%;
+  width:70%;
+  display: flex;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+  overflow: hidden;
+  
+}
+
+.leftcontainer {
+  flex-direction: column;
+
+  background-color:white;
+  width:50%;
+  display: flex;
+  position: relative;
+}
+
+.rightcontainer{
+  flex-direction: row;
+  width:50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+      url("/public/images/NYh11.jpg");
+  background-position:center top;
+  background-size: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightcontainer h1{
+  /* font-size: 110px; */
+  font-size: 6vw;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.signupContainer {
+  flex-direction: column;
+  margin: auto;
+  /* height:70%; */
+  height:60%;
+  /* width: 70%; */
+  /* width: 60%; */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupContainer h2{
+  margin-top: auto;
+}
+
+.sinputfield {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .leftcontainer,
+  .rightcontainer {
+    width: 100%;
+  }
+} */
+
+.leftcontainer h1, h2, h3, h4, label, p, button{
+  text-align: center;
+
+}
+
+
+.sbtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #FFE4B5;
+  color: black;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}
+
+.sbtn:hover {
+  background-color: #ADD8E6;
+}
+
+.backToLogin{
+  color: red;
+  text-decoration: underline;
+}
+
+.backToLogin:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+
+@media (max-width: 992px) and (min-width: 769px) {
+  .midbox {
+      width: 80%;
+      /* height: 80%; */
+  }
+  .leftcontainer {
+      width: 70%;
+  }
+  .rightcontainer {
+      width: 30%;
+  }
+  .rightcontainer h1 {
+    font-size: 5vw;
+  }
+  .rightcontainer span {
+      margin-left: 1vw;
+  }
+}
+
+.inputfield {
+  width: 90%;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.passwordinput {
+  position: relative;
+  display: flex;
+}
+
+.inputWrapper {
+  flex: 80%;
+  position: relative;
+  display: inline-block;
+}
+
+.eyeIcon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);  /* Centers the icon vertically */
+  cursor: pointer;  
+}
+
+.validicon,
+.invalidicon {
+  flex: 20%;
+  margin-top: 5px;
+  margin-left: 50px;  /* Space between the input and the icon */
+  vertical-align: middle; /* To align with the middle of the input text */
+  font-size: 20px;  /* Adjust icon size */
+}
+
+.validicon {
+  color: #27AE60; 
+}
+
+.invalidicon {
+  color: #E74C3C ;  /* For a red exclamation icon */
+}
+
+.requirements{
+  color:#95A5A6;
+  font-size: 12px;
+}
+
+.disabledButton {
+  background-color: #CACFD2 ;
+  cursor: not-allowed;
+}
+
+@media (max-width: 769px) {
+  .signupcontainer {
+      height: 70vh;
+  }
+  .midbox {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+  }
+  .rightcontainer {
+      width: 0;
+  }
+
+
+  .leftcontainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .signupContainer {
+      margin-bottom: 0;
+      margin-top: 0;
+      height: 60%;
+  }
+}

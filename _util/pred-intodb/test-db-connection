@@ -1,0 +1,23 @@
+import time
+import psycopg2
+from datetime import datetime
+import pandas as pd
+from functions import load_model, make_prediction, is_holiday, get_weather_data
+
+db_config = {
+    'host': 'inpeace-db.cn1hlpnikmwo.eu-west-1.rds.amazonaws.com',
+    'port': '5432',
+    'database': 'postgres',
+    'user': 'postgres',
+    'password': 'postgres'
+}
+zones_query = "SELECT zoneid FROM zones"
+        
+conn = psycopg2.connect(**db_config)
+cursor = conn.cursor()
+cursor.execute(zones_query)
+rows = cursor.fetchall()
+print(rows)
+
+cursor.close()
+conn.close()

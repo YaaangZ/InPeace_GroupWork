@@ -1,0 +1,229 @@
+.wholeExploreContainer {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(255, 255, 255, 0.5)
+    ),
+    url("/public/images/NYh11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exploreContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mapForm {
+    width: 33vw;
+    width: 450px;
+    height: auto;
+    border: 3px solid rgba(248, 248, 255, 0);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mapFormInput,
+.mapFormInputSelect{
+    width: 95%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.mapFormInputSelect {
+    width: 97%;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.buttonContainer > div {
+    margin: 0px 10px;
+    width: 20%;
+    height: 30px;
+}
+
+.mapSubmitBtn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #778899;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Copperplate;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.mapSubmitBtn:hover {
+    background-color: #E0FFFF;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.exploreH1Text {
+    font-size: 36px;
+    color: #FFFAFA;
+    font-family: Lucida Handwriting;
+    animation: fade-in-left 1.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploreText {
+    color: #F5FFFA;
+    font-family: Copperplate;
+}
+
+.exploreText select {
+    color: #808080;
+}
+
+.mapFormInput[type="datetime-local"]::-webkit-datetime-edit {
+    color: #808080;
+}
+
+
+
+#suggestion {
+    width: 40vw;
+}
+
+#spinnerContainer{
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/*spinner code is from https://loading.io/css/*/
+.ldsRoller {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.ldsRoller div {
+    animation: ldsRoller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 10px 10px;
+}
+.ldsRoller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 1.75px;
+    height: 1.75px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -1px 0 0 -1px;
+}
+.ldsRoller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+.ldsRoller div:nth-child(1):after {
+    top: 15.75px;
+    left: 15.75px;
+}
+.ldsRoller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+.ldsRoller div:nth-child(2):after {
+    top: 17px;
+    left: 14px;
+}
+.ldsRoller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+.ldsRoller div:nth-child(3):after {
+    top: 17.75px;
+    left: 12px;
+}
+.ldsRoller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+.ldsRoller div:nth-child(4):after {
+    top: 18px;
+    left: 10px;
+}
+.ldsRoller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+.ldsRoller div:nth-child(5):after {
+    top: 17.75px;
+    left: 8px;
+}
+.ldsRoller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+.ldsRoller div:nth-child(6):after {
+    top: 17px;
+    left: 6px;
+}
+.ldsRoller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+.ldsRoller div:nth-child(7):after {
+    top: 15.75px;
+    left: 4.25px;
+}
+.ldsRoller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+.ldsRoller div:nth-child(8):after {
+    top: 14px;
+    left: 3px;
+}
+@keyframes ldsRoller {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    color: #CD5C5C;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.bouncing {
+    animation: bounce 1s infinite;
+}
+
+
+@media (max-width: 769px) {
+    .mapForm {
+        width: 80%;
+    }
+}

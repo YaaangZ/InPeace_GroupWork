@@ -1,0 +1,25 @@
+{
+    "name": "web-application",
+    "version": "1.0.0",
+    "main": "ApiGateway.js",
+    "scripts": {
+        "start": "node ApiGateway.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-session": "^1.17.3",
+        "http-proxy-middleware": "^2.0.6",
+        "cors": "^2.8.5",
+        "jsonwebtoken": "^9.0.0",
+        "morgan":"^1.10.0",
+        "axios": "^1.4.0",
+        "axios-retry": "^3.6.0",
+        "express-rate-limit": "^6.8.1",
+        "https": "^1.0.0",
+        "cookie-parser": "^1.4.6"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": ""
+}

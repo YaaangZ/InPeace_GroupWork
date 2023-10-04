@@ -1,0 +1,36 @@
+name: Deploy with Docker Compose
+
+# on:
+#   workflow_run:
+#     workflows: [Build and Push Docker Images]
+#     types:
+#       - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          version: 'latest'
+          service_account_key: ${{ secrets.GOOGLE_CLOUD_KEY }}  # Replace with your actual secret name
+
+      - name: SSH into the VM and stop existing Docker containers
+        run: |
+          gcloud compute ssh docker-compose-ubuntu20-1-vm --zone europe-west1-b --project inpeace-394208 --command "cd /home/caryn_ooi/inpeace && sudo docker compose down"
+
+      - name: Clean up unused Docker images
+        run: |
+          sudo docker image prune -a -f
+
+      - name: Log in to the GitHub Container Registry
+        run: |
+          sudo docker login ghcr.io -u caryn -p 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
+
+      - name: SSH into the VM and pull the latest Docker image and run docker compose up
+        run: |
+          gcloud compute ssh docker-compose-ubuntu20-1-vm --zone europe-west1-b --project inpeace-394208 --command "cd /home/caryn_ooi/inpeace && sudo docker compose up -d"

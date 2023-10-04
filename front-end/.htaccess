@@ -1,0 +1,11 @@
+# Turn on the rewriting engine
+RewriteEngine On
+# Base URL for rewrite
+RewriteBase /
+
+# Don't apply to URLs that go to existing files or folders.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.html/URL
+RewriteRule ^ index.html [L]

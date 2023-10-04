@@ -1,0 +1,182 @@
+.community{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url("/public/images/BGh1.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.topPart{
+    height: 10%;
+    width: 100%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 3%;
+    z-index: 0;
+}
+
+.backIcon{
+    color: white;
+    font-size: 4vh;
+    top: 5%;
+    left:5%;
+    position: absolute;
+}
+
+.backIcon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.createPost{
+    color: #004aad;
+    font-size:2vh;
+    top: 5%;
+    right:5%;
+    position: absolute;
+}
+
+.createPost:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.topText{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100%;
+    color: #004aad;
+    margin:auto;
+}
+
+
+.postContainer{
+    height: 85%;
+    width: 100%;
+}
+
+.topBottom{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 0%;
+    right: 5%;
+    width: 20%;
+}
+
+.starActive {
+    color: #004aad;
+}
+
+.starInactive {
+    color: grey;
+}
+
+
+.favStar{
+    width:10%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+}
+
+.sortOption{
+    width:70%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sortOption select {
+    width: 100%;
+    height: 100%;
+    font-size: 1em; 
+    text-align: center;
+    padding: 0.5em; 
+    border: 0.1em solid #004aad;
+    border-radius: 5%;
+    color: #004aad;
+    background-color: white;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: scroll;
+}
+
+
+.sortOption select:hover {
+    background-color: #003882;
+    color: white;
+}
+
+.sortOption select::after {
+    content: "\25BC"; 
+    padding-left: 5%;
+    color: #004aad; 
+    pointer-events: none;
+}
+
+.sortOption select option {
+    color: #000;
+    background-color: #fff;
+}
+
+  
+  
+@media screen and (max-width: 768px) {
+    .community{
+        height: 100vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-image: url("/public/images/BGh1.png");
+        background-position: left;
+        background-size: auto;
+    }
+
+    .topText{
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 100%;
+        color: white;
+        margin:auto;
+    }
+
+    .createPost{
+        color: white;
+        font-size:2vh;
+        top: 5%;
+        right:5%;
+        position: absolute;
+    }
+
+    .topBottom{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
+        bottom: -80%;
+        right: 5%;
+        width: 20%;
+    }
+
+}

@@ -1,0 +1,113 @@
+/* MainPage.module.css */
+
+.introduction {
+  display: flex;
+  width:100%;
+  font-size: 20px;
+  text-align: left;
+  height: 100vh;
+  color: black;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/public/images/NYh11.jpg");
+  background-position: center top;
+  background-size: cover;
+  align-items:center;
+  justify-content: space-between;
+  overflow:hidden;
+  scroll-snap-align: start;
+}
+
+.left{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Updated */
+  justify-content: center; /* Updated */
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 10%;
+  margin-right: 0;
+  max-width: 50%; /* Updated */
+}
+
+.left h1 {
+  color: white;
+  font-size: 50px;
+  text-align: left;
+  padding-bottom: 5%;
+  width:150%;
+}
+
+.left button {
+  background-color: brown;
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10%;
+  width: auto;
+  cursor: pointer;
+  margin-top: 20px;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.left button:hover {
+  transform: translateY(0) scale(1.05);
+}
+
+.left button:active {
+  transform: translateY(0) scale(0.8);
+}
+
+.right {
+  flex:1;
+  background-image: url("/public/images/NYv3.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 40%;
+  padding-right: 55%;
+  flex-shrink: 0; /* Added to prevent shrinking */
+}
+
+.aboutus{
+  margin-bottom: 6%;
+}
+
+
+@media screen and (max-width: 769px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .introduction h1{
+    font-size: 20px;
+    text-align: center;
+    word-wrap: auto;
+  }
+
+  .left,
+  .right {
+    flex: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .left {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .right {
+    padding-bottom: 20%;
+    padding-right: 0;
+  }
+
+  .aboutus{
+    margin-bottom: 0;
+  }
+}

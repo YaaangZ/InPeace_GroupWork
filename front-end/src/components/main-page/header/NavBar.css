@@ -1,0 +1,140 @@
+/*--- header ---*/
+nav {
+  box-sizing: border-box;
+  display: flex;
+  width:100%;
+  align-items: center;
+  background-color: #325673;
+  justify-content: space-between;
+  padding:20px 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 40px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover::after,
+#navbar a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17cf97;
+  position: absolute;
+  bottom: -4px;
+  left: 40px;
+}
+
+#navbar a.active {
+  color: #17cf97;
+}
+
+#logout{
+  color: #fff;
+  font-size: 24px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #fff;
+  align-items: center;
+}
+
+@media screen and (max-width: 769px) {
+  #navbar {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 120px;
+    right: -300px;
+    width: 150px;
+    /* height: 100vh; */
+    height: 80vh;
+    background: #325673;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px, 0, 0, 10px;
+    transition: 0.3s ease-in-out;
+
+    z-index: 1;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+/*---Footer---*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #325673;
+  flex-shrink: 0;
+  width: 100%;
+  bottom:0;
+  width: 100%;
+}
+
+#copyright{
+  color: #fff;
+  margin-left: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.email-info {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.email-info i, .email-info p {
+  margin: 0 5px;
+}
+
+#contact{
+  margin-right: 55px;
+}

@@ -1,0 +1,129 @@
+/* Profile.module.css */
+
+.title{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-right: 400px;
+}
+
+.title2{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-right: 400px;
+    font-size: 20px;
+    color: #2C3E50;
+}
+
+.subtitle{
+    text-align: left;
+    color:#808B96;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 20px;
+    box-shadow: inset 0 -2px  #808B96;
+    max-width: 80%;
+}
+
+.heading{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.text{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 400px;
+    font-size: 11px;
+    width:60%;
+    color: #2C3E50;
+}
+
+.avatarContainer {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.selectedAvatar {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarList {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(70pt, 1fr));
+    width: 80%;
+}
+
+.preferenceContainer{
+    width:60%;
+}
+
+.section{
+    margin-bottom: 30px;
+}
+
+.option{
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.select{
+    float: right;
+    width: 210px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* change 100px to desired width */
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+
+.styles.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 2px 15px;
+    border: 2px solid #6495ED; 
+    background-color: transparent;
+    color: #6495ED;
+    cursor: pointer;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    border-radius: 50px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    max-width: 100px;
+    min-width: 80px;
+  }
+
+.button:hover {
+  background-color: #fff; 
+  color: #808B96; 
+  border: 2px solid ;
+}
+
+@media screen and (max-width:769px){
+    .select{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+}

@@ -1,0 +1,40 @@
+{
+  "busynessStreet": [
+    {
+      "hour": 0,
+      "streetID": 17,
+      "zoneID": "140",
+      "predictedBusyness": "Not Busy"
+    },
+    {
+      "hour": 0,
+      "streetID": 24,
+      "zoneID": "140",
+      "predictedBusyness": "Not Busy"
+    },
+    {
+      "hour": 1,
+      "streetID": 29,
+      "zoneID": "215",
+      "predictedBusyness": "Moderately Busy"
+    },
+    {
+      "hour": 1,
+      "streetID": 33,
+      "zoneID": "215",
+      "predictedBusyness": "Moderately Busy"
+    },
+    {
+      "hour": 2,
+      "streetID": 379,
+      "zoneID": "320",
+      "predictedBusyness": "Very Busy"
+    },
+    {
+      "hour": 2,
+      "streetID": 381,
+      "zoneID": "320",
+      "predictedBusyness": "Very Busy"
+    }
+  ]
+}

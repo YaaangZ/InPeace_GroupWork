@@ -1,0 +1,82 @@
+.popup {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    width: 10%;
+    height: 35%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconbox {
+    height: 40%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.icon {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.selectedIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.emptyIcon {
+    color: #888;
+}
+
+.options {
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.secondbox {
+    height: 60%;
+}
+
+.login:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.home:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mypage:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.logout:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: underline;
+}

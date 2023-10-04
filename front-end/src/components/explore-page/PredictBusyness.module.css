@@ -1,0 +1,102 @@
+.playbackControl {
+    padding: 5px;
+    border-radius: 30px;
+    background: #325673;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    overflow: hidden;
+}
+
+
+.playbackTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Cursive, serif;
+}
+
+.playbackContent {
+    color: white;
+    font-weight: bold;
+}
+
+.playbackBtn {
+    background-color: #325673;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.playbackBtn:hover {
+    background-color: #1677ff;
+}
+
+.playbackBtn:focus {
+    outline: none;
+}
+
+.playbackBtn:active {
+    background-color: #096dd9;
+}
+
+.playbackControl :global(.ant-slider) {
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.playbackControl :global(.ant-slider-rail) {
+  background-color: #ddd;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.playbackControl :global(.ant-slider-track) {
+  background-color: #1890ff;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.playbackControl :global(.ant-slider-handle) {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #1890ff;
+  background-color: #fff;
+  margin-top: -3px;
+  margin-left: 0px;
+}
+
+.playbackControl :global(.ant-slider:hover) {
+  border-color: #40a9ff;
+}
+
+.playbackControl :global(.ant-slider-handle) {
+  background-color:transparent;
+  border-color: transparent;
+}
+
+/* Styles for Slider marks */
+.playbackControl :global(.ant-slider-mark) {
+  margin-top: 10px;
+}
+
+.playbackControl :global(.ant-slider-mark-text) {
+  font-size: 12px;
+  color: #000;
+}
+
+/* :first-child and :last-child styles for Slider marks */
+.playbackControl :global(.ant-slider-mark-text:first-child) {
+  margin-left: 0;
+}
+
+.playbackControl :global(.ant-slider-mark-text:last-child) {
+  margin-right: 0;
+}

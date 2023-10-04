@@ -1,0 +1,54 @@
+{
+  "zoneBusyness": [
+    {
+      "hour": 11,
+      "predictedBusyness": 1.5,
+      "zoneID": 4
+    },
+    {
+      "hour": 11,
+      "predictedBusyness": 3,
+      "zoneID": 14
+    },
+    {
+      "hour": 12,
+      "predictedBusyness": 2.1,
+      "zoneID": 5
+    },
+    {
+      "hour": 12,
+      "predictedBusyness": 1.2,
+      "zoneID": 13
+    },
+    {
+      "hour": 13,
+      "predictedBusyness": 3.1,
+      "zoneID": 2
+    },
+    {
+      "hour": 13,
+      "predictedBusyness": 2.5,
+      "zoneID": 10
+    },
+    {
+      "hour": 14,
+      "predictedBusyness": 1.6,
+      "zoneID": 6
+    },
+    {
+      "hour": 14,
+      "predictedBusyness": 2.9,
+      "zoneID": 8
+    },
+    {
+      "hour": 15,
+      "predictedBusyness": 1.8,
+      "zoneID": 3
+    },
+    {
+      "hour": 15,
+      "predictedBusyness": 3.2,
+      "zoneID": 7
+    }
+  ]
+}

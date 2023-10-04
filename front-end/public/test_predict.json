@@ -1,0 +1,44 @@
+{
+  "zoneBusyness": [
+    {
+      "hour": 11,
+      "predictedBusyness": 1.5,
+      "zoneID": 4
+    },
+    {
+      "hour": 11,
+      "predictedBusyness": 3,
+      "zoneID": 14
+    },
+    {
+      "hour": 12,
+      "predictedBusyness": 2,
+      "zoneID": 4
+    },
+    {
+      "hour": 12,
+      "predictedBusyness": 2.8,
+      "zoneID": 14
+    },
+    {
+      "hour": 13,
+      "predictedBusyness": 3.2,
+      "zoneID": 4
+    },
+    {
+      "hour": 13,
+      "predictedBusyness": 2.5,
+      "zoneID": 14
+    },
+    {
+      "hour": 14,
+      "predictedBusyness": 4.1,
+      "zoneID": 4
+    },
+    {
+      "hour": 14,
+      "predictedBusyness": 1.9,
+      "zoneID": 14
+    }
+  ]
+}

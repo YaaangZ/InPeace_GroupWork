@@ -1,0 +1,84 @@
+.placeCard {
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 95%;
+}
+
+div > .placeCard {
+    width: 95%;
+    padding-left: 35px;
+}
+
+.placeCardInfo{
+    width:100%;
+}
+
+.placeCardInfo .placeName,
+.placeCardInfo .placeStatus,
+.placeCardInfo .placeAddress {
+    text-align: left;
+}
+
+.placeName {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.placeStatus {
+    font-size: 14px;
+    color: black;
+}
+
+.placeCardIcon {
+    padding: 15px;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.recTitle {
+    color: white;
+    font-size:28px;
+    font-family:Lucida Handwriting;
+    animation: fade-in-left 2.0s ease-in-out;
+}
+
+.recommendedList {
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow-y: scroll; */
+}
+
+.placeBusynessContainer {
+    width: 100%;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+@media (max-width:1024px) {
+    .recommendedList {
+        /* flex-direction: row; */
+    }
+    .placeCard {
+        /* width: 100%; */
+    }
+}

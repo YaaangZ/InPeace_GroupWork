@@ -1,0 +1,48 @@
+[
+  {
+    "hour": 20,
+    "predictedBusyness": "Not Busy",
+    "zoneID": 232
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Somewhat Busy",
+    "zoneID": 231
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Very Busy",
+    "zoneID": 43
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Somewhat Busy",
+    "zoneID": 4
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Not Busy",
+    "zoneID": 5
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Very Busy",
+    "zoneID": 6
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Somewhat Busy",
+    "zoneID": 7
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Not Busy",
+    "zoneID": 8
+  },
+  {
+    "hour": 20,
+    "predictedBusyness": "Not Busy",
+    "zoneID": 42
+  }
+
+]

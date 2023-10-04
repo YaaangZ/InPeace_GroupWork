@@ -1,0 +1,262 @@
+.login {
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1)),
+    url("/public/images/NYh11.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: absolute;
+    z-index: -1;
+
+}
+
+.backIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 60px;
+}
+
+.backIcon:hover {
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+
+.midbox {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.left {
+    flex-direction: row;
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url("/public/images/NYh11.jpg");
+    background-position: center top;
+    background-size: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h1 {
+    /* font-size: 130px; */
+    font-size: 6vw;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+    position: relative;
+
+}
+.left h1 span {
+    /* margin-left: 170px; */
+    margin-left: 7vw;
+}
+
+.right {
+    display: flex;
+    width: 50%;
+    background-color: white;
+}
+
+.logincontainer {
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    height: 60%;
+
+
+}
+
+.logincontainer h2, h3, h4, label {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.inputfield {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFE4B5; /* Yellow background */
+    color: black;
+    cursor: pointer;
+    margin-left: auto; /* Position button on the right */
+    display: block; /* Make button a block element */
+
+}
+
+.btn:hover {
+    background-color: #ADD8E6;
+}
+
+.options {
+    text-align: center;
+    margin-top: 10px;
+    color: #808080;
+    font-size: 10px;
+}
+
+.options a {
+    color: #0000ff;
+}
+
+.options:hover {
+    color: black; /* Change color on hover */
+}
+
+.passwordinput {
+    position: relative;
+}
+
+.togglepassword {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 0.4rem;
+    color: #778899;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+
+}
+
+.options a {
+    color: black; /* Set the color to black */
+    font-weight: bold; /* Set the font weight to bold */
+    text-decoration: none; /* Remove the underline */
+}
+
+.options {
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.showpasswordtoggle {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.showpassword {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid #ccc;
+    background-color: white;
+}
+
+.showpassword:checked {
+    border-color: #808080;
+    background-color: #808080;
+}
+
+.showpassword + label {
+    margin-bottom: 0;
+}
+
+.signupClick {
+    color: red;
+    text-decoration: underline;
+}
+
+.signupClick:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.successMessage {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .midbox {
+        width: 80%;
+        /* height: 80%; */
+    }
+    .left {
+        width: 30%;
+    }
+    .left h1 {
+        font-size: 5vw;
+    }
+    .left span {
+        margin-left: 1vw;
+    }
+    .right {
+        width: 70%;
+    }
+}
+
+@media (max-width: 769px) {
+    .login {
+        height: 100%;
+    }
+    .midbox {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .left {
+        width: 0;
+    }
+
+
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logincontainer {
+        margin: 0;
+        margin-bottom: 20%;
+    }
+}
